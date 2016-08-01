@@ -1,0 +1,69 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta information -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<!-- Title-->
+<title>{% block title %}三个柚子{% endblock %}</title>
+<!-- Favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static "ico/apple-touch-icon-144-precomposed.png" %}">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static "ico/apple-touch-icon-114-precomposed.png" %}">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static "ico/apple-touch-icon-72-precomposed.png" %}">
+<link rel="apple-touch-icon-precomposed" href="{% static "ico/apple-touch-icon-57-precomposed.png" %}">
+<link rel="shortcut icon" href="{% static "ico/favicon.ico" %}">
+<!-- CSS Stylesheet-->
+<link type="text/css" rel="stylesheet" href="{% static "css/bootstrap/bootstrap.min.css" %}" />
+<link type="text/css" rel="stylesheet" href="{% static "css/bootstrap/bootstrap-themes.css" %}" />
+<link type="text/css" rel="stylesheet" href="{% static "css/style.css" %}" />
+
+<!-- Styleswitch if  you don't chang theme , you can delete -->
+{% block css %}{% endblock %}
+
+</head>
+<body>
+<div id="wrap">
+
+        {% include "front/common/nav.html" %}
+
+        {% block content %}{% endblock %}
+
+		
+		{% include "front/common/footer.html" %}
+</div>
+
+<!--
+////////////////////////////////////////////////////////////////////////
+//////////     JAVASCRIPT  LIBRARY     //////////
+/////////////////////////////////////////////////////////////////////
+-->
+		
+<!-- Jquery Library -->
+<script type="text/javascript" src="{% static "js/jquery.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/jquery.ui.min.js" %}"></script>
+<script type="text/javascript" src="{% static "plugins/bootstrap/bootstrap.min.js" %}"></script>
+<!-- Modernizr Library For HTML5 And CSS3 -->
+<script type="text/javascript" src="{% static "js/modernizr/modernizr.js" %}"></script>
+<!-- Owl Carousel  -->
+<script type="text/javascript" src="{% static "plugins/owl-carousel/owl.carousel.js" %}"></script>
+<link href="{% static "plugins/owl-carousel/owl.carousel.css" %}" rel="stylesheet">
+<link href="{% static "plugins/owl-carousel/owl.theme.css" %}" rel="stylesheet">
+<link href="{% static "plugins/owl-carousel/owl.transitions.css" %}" rel="stylesheet">
+<!-- Revolution Slide -->
+<script type="text/javascript" src="{% static "plugins/slide/js/jquery.themepunch.plugins.min.js" %}"></script>
+<script type="text/javascript" src="{% static "plugins/slide/js/jquery.themepunch.revolution.min.js" %}"></script>
+<link rel="stylesheet" type="text/css" href="{% static "plugins/slide/css/settings.css" %}" media="screen" />
+<!-- Select Nav -->
+<script type="text/javascript" src="{% static "plugins/selectnav/selectnav.min.js" %}"></script>
+<!-- Fancybox plugin -->
+<script type="text/javascript" src="{% static "plugins/fancybox/jquery.fancybox.js" %}"></script>	
+<link href="{% static "plugins/fancybox/jquery.fancybox.css" %}" rel="stylesheet" />
+<!-- Library Themes Customize-->
+<script type="text/javascript" src="{% static "js/caplet.custom.js" %}"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+{% block js %}{% endblock %}
+
+</body>
+</html>
