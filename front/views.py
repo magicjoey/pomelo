@@ -6,6 +6,9 @@ from django.shortcuts import render
 def index(request):
     return render(request, "front/index.html")
 
+def index_bak(request):
+    return render(request, "front/index_bak.html")
+
 
 def service(request):
     return render(request, "front/service.html")

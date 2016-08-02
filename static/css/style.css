@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400);
 @import url(../plugins/form/icheck/skins/all.css);
 @import url(../plugins/form/switch/switch.css);
-@import url(../plugins/datetime/datetime.css);
+/*@import url(../plugins/datetime/datetime.css);*/
 @import url(animation.css);
 @import url(jquery-ui.css);
 ::-moz-selection {

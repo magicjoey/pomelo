@@ -12,6 +12,7 @@ from django.conf.urls import url
 from front import views
 
 urlpatterns = [
+    url(r'^index_bak', views.index_bak),
     url(r'^index', views.index),
     url(r'^service', views.service),
     url(r'^element', views.element),
