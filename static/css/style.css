@@ -1562,3 +1562,96 @@ ul.navbar-xs li a:hover {
 .bg-gray-lighter-darken.form-control {
   border: none;
 }
+
+#buyBtn{
+      background: #2ea3e5;
+    border-radius: 5px;
+    color: #fff;
+    padding:0 3px;
+    font-size:12px;
+    height: 26px;
+    line-height: 26px;
+    margin: 46px 0 0 25px;
+}
+
+.down-iphone {
+  height:593px;
+  width:460px;
+  float:left;
+  background:url(../img/pomelo/down-iphone.png?=0423) no-repeat left top;
+  border-radius:8px;
+  text-align:center;
+}
+.down-iphone h4 {
+  height:40px;
+  margin:435px auto 0;
+  color:#fff;
+  font-size:30px;
+  font-weight:normal;
+  line-height: 40px;
+  text-align:center;
+  text-shadow:2px 2px 2px rgba(0,0,0,.21);
+}
+.down-iphone p {
+  margin:0 auto;
+  color:#fff;
+  font-size:14px;
+  line-height: 28px;
+  text-align:center;
+}
+.down-iphone .down-btn {
+  width:148px;
+  height:38px;
+  display:inline-block;
+  border:2px solid #4eace1;
+  border-radius:8px;
+  color:#fff;
+  font-size:18px;
+  line-height: 38px;
+  text-shadow:2px 2px 2px rgba(0,0,0,.21);
+}
+.down-iphone .down-btn:hover,
+.down-iphone .down-android-link:hover .down-btn {
+  text-decoration:none;
+  box-shadow:0 3px 8px 3px rgba(34,50,88,.15);
+}
+.down-android {
+  float:right;
+  background:url(../img/pomelo/down-android.png) no-repeat left top;
+}
+.down-android-link {
+  width:152px;
+  height:42px;
+  margin:14px auto 0;
+  display:inline-block;
+  position:relative;
+}
+.down-android-link:hover div {
+  display:block;
+}
+.down-android-link div {
+  position:absolute;
+  top:42px;
+  left:0;
+  width:152px;
+  border-radius:8px;
+  background:#fff;
+  overflow:hidden;
+  display:none;
+}
+.down-android-link ul {
+  margin-top:-1px;
+}
+.down-android-link li {
+  border-top:1px solid #f0f0f0;
+  height:40px;
+  text-align:center;
+}
+.down-android-link li a {
+  color:#767d89;
+  font-size:14px;
+  line-height: 40px;
+}
+.down-android-link li a:hover {
+  color:#58a4ed;
+}

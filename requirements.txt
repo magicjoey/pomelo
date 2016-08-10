@@ -14,7 +14,6 @@ django-guardian
 django-extensions
 django-backward
 alipay
-django-rest-swagger
 django-simple-history
 django-grappelli
 FeedParser

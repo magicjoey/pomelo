@@ -11,10 +11,15 @@
 from django.conf.urls import url
 from front import views
 
+
 urlpatterns = [
     url(r'^index_bak', views.index_bak),
     url(r'^index', views.index),
+    url(r'^app', views.app),
     url(r'^service', views.service),
+    url(r'^about', views.about),
+    url(r'^child', views.child),
+    url(r'^detail', views.detail),
     url(r'^element', views.element),
     url(r'^contact', views.contact),
     url(r'^portfolio', views.portfolio),

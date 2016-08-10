@@ -49,6 +49,8 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'front.middleware.CommonDataProcessor',
+    'django.middleware.locale.LocaleMiddleware'
 )
 
 ROOT_URLCONF = 'pomelo.urls'
@@ -99,6 +101,8 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+LOCALE_PATHS = ('locale/',)
 
 
 # Static files (CSS, JavaScript, Images)
