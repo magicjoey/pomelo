@@ -1574,6 +1574,12 @@ ul.navbar-xs li a:hover {
     margin: 46px 0 0 25px;
 }
 
+
+#header.fixedHeader #buyBtn{
+  margin:25px 0 0 0;
+  padding:0 3px;
+}
+
 .down-iphone {
   height:593px;
   width:460px;
