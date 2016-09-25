@@ -23,5 +23,5 @@ urlpatterns = [
     url(r'^element', views.element),
     url(r'^contact', views.contact),
     url(r'^portfolio', views.portfolio),
-    url(r'^', views.index),
+    url(r'^', views.detail),
 ]

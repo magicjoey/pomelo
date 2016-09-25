@@ -5,20 +5,6 @@
     }
 </style>
 <header id="header">
-				<nav id="nav-top">
-						<div class="container">
-							<ul class="contact-top">
-									<li><a href="#"><i class="fa fa-phone"></i> +(86) 13636499021</a></li>
-									<li><a href="#"><i class="fa fa-envelope"></i> sangeyouzi_public@163.com </a></li>
-							</ul>
-							<ul class="social-top pull-right">
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-flickr"></i></a></li>
-									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-							</ul>
-						</div>
-				</nav>
 				<nav id="nav-middle">
 						<nav class="navbar" role="navigation">
 								<div class="container">
@@ -35,9 +21,9 @@
 										<ul class="nav navbar-nav navbar-right hidden-xs" id="navigation">
                                             {% for nav in nav_list %}
                                                 {% if nav.title == "儿童推车" %}
-                                                    <li class="dropdown">
+                                                    <li class="dropdown" >
 														<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">儿童推车 &nbsp; <i class="fa fa-angle-down"></i></a>
-														<ul class="dropdown-menu dropdown-menu-left  multi-level animated fast" data-effect="fadeInDown">
+														<ul class="dropdown-menu dropdown-menu-left  multi-level animated fast" data-effect="fadeInDown" style="width: 500px;padding-bottom: 0px;">
 																<li><a href="/detail">
                                                                     <img src="{% static "img/pomelo/product_detail.jpg" %}" class="detail_img"/>
                                                                     <p>儿童车</p></a></li>
