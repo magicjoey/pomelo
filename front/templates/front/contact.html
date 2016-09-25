@@ -23,22 +23,23 @@
 												<hr>
 												<p>如对我们的产品或服务有任何疑问，请填写联系表格。请尽可能详细地填写表格，以便我们更好地为您服务。感谢您提供的意见和建议。</p>
 												<br>
-												<form action="#" method="post" class="frmContact row">
+												<form action="/save_contact" method="post" class="frmContact row">
+                                                    {% csrf_token %}
 														<div class="col-md-6">
 														<h5>您的姓名?</h5>
-														<input id="txtName" name="txtName" type="text" class="form-control" >
+														<input id="name" name="name" type="text" class="form-control" >
 														<br>
 														</div>
 														<div class="col-md-6">
 														<h5>您的电话?</h5>
-														<input id="txtEmail" name="txtEmail" type="text" class="form-control" >
+														<input id="email" name="email" type="text" class="form-control" >
 														<br>
 														</div>
 														<div class="col-md-12">
 														<h5>消息内容</h5>
-														<textarea id="txtText" name="txtText" class="form-control"></textarea>
+														<textarea id="content" name="content" class="form-control"></textarea>
 														<br>
-														<button name="" type="button" class="btn btn-theme-inverse">发送消息</button>
+														<button name="" type="submit" class="btn btn-theme-inverse">发送消息</button>
 														
 														</div>
 												</form>

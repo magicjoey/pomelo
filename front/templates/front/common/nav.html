@@ -11,9 +11,9 @@
 										<div class="navbar-header">
 												<ul class="navbar-xs pull-right  visible-xs">
 														<li><button class="btn btn-header-search" ><i class="fa fa-search"></i></button></li>
-														<li><a href="#" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></a></li>
+														<li><a href="/" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></a></li>
 												</ul>
-												<a class="navbar-brand" href="#">
+												<a class="navbar-brand" href="/">
 													<img src="{% static "img/logo.png" %}">
 												</a> 
 										</div>
@@ -26,14 +26,20 @@
 														<ul class="dropdown-menu dropdown-menu-left  multi-level animated fast" data-effect="fadeInDown" style="width: 500px;padding-bottom: 0px;">
 																<li><a href="/detail">
                                                                     <img src="{% static "img/pomelo/product_detail.jpg" %}" class="detail_img"/>
-                                                                    <p>儿童车</p></a></li>
+                                                                    <p>三个柚子儿童车</p></a></li>
 														</ul>
 												</li>
                                                 {% else %}
                                                 <li><a href="{{ nav.url }}">{{ nav.title }}</a></li>
                                                 {% endif %}
                                             {% endfor %}
-                                                <li><a id="buyBtn" href="https://sangeyouzi.tmall.com" target="_blank">立即购买</a></li>
+                                          <li class="dropdown" >
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">立即购买 &nbsp; <i class="fa fa-angle-down"></i></a>
+														<ul class="dropdown-menu dropdown-menu-left  multi-level animated fast" data-effect="fadeInDown">
+																<li><a href="http://mall.jd.com/index-547370.html" target="_blank">京东旗舰店</a></li>
+                                                            <li><a href="https://sangeyouzi.tmall.com" target="_blank">天猫旗舰店</a></li>
+														</ul>
+												</li>
 {#												<li><a href="index.html">Home</a></li>#}
 {#												<li><a href="service.html">Service</a></li>#}
 {#												<li class="dropdown">#}

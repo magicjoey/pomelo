@@ -1,7 +1,9 @@
+from datetime import datetime
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.utils.translation import ugettext
 # Create your views here.
-from front.models import Nav
+from front.models import Nav, Contact
 
 
 def index(request):
@@ -38,6 +40,13 @@ def element(request):
 def portfolio(request):
     return render(request, "front/portfolio.html", {"nav_list": __nav()})
 
+def save_contact(request):
+    name = request.POST.get("name")
+    content = request.POST.get("content")
+    email  = request.POST.get("email")
+    contact = Contact(name=name,content=content,email=email,gmt_create=datetime.now(), status='I')
+    contact.save()
+    return HttpResponseRedirect("/contact")
 
 def __nav():
     nav_list = Nav.objects.filter(level__in=[1, None]).order_by("priority")

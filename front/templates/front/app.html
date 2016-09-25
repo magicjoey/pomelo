@@ -2,96 +2,103 @@
 {% load staticfiles %}
 {% load i18n %}
 {% block css %}
-
+    <style>
+    .qrcode{
+        width:100px;    margin-top: -5px;
+    }
+    </style>
 {% endblock %}
 {% block content %}
-		<section id="header-space"></section>
-		<section id="headline">
-				<div class="container  text-center">
-					<h3 style="font: 20px tahoma, 'Hiragino Sans GB', 'Microsoft YaHei', arial, SimHei, Verdana, sans-serif;">{% trans "三个柚子客户端下载" %}</h3>
-                    <h4>iPhone - Android</h4>
-				</div>
-		</section>
-		<section class="section">
-				<div class="container  text-center">
-					<div class="col-md-12">
-                        <div class="clearfix down">
-        <div class="down-iphone" id="down-iphone">
-            <h4>iPhone v2.1</h4>
-            <p>发布日期：2016-06-05</p>
-            <div class="down-android-link">
-                <a href="https://itunes.apple.com/us/app/kong-qi-guo/id987403581?l=zh&amp;ls=1&amp;mt=8" class="down-btn" target="_blank">下载</a>
-            </div>
+    <section id="header-space"></section>
+    <section id="headline">
+        <div class="container  text-center">
+            <h3 style="font: 20px tahoma, 'Hiragino Sans GB', 'Microsoft YaHei', arial, SimHei, Verdana, sans-serif;">{% trans "三个柚子客户端下载" %}</h3>
+            <h4>iPhone - Android</h4>
         </div>
-        <div class="down-iphone down-android" id="down-android">
-            <h4>Android v2.1</h4>
-            <p>发布日期：2016-06-02</p>
-            <div class="down-android-link">
-                <a href="http://download.moji001.com/download/airnut-V2.1.0.02-release-c7777.apk" class="down-btn" target="_blank">下载</a>
-                <div style="display: none;">
-                    <ul>
-                        <li>
-                            <a href="" target="_blank">直接下载</a>
-                        </li>
-                    </ul>
+    </section>
+    <section class="section">
+        <div class="container  text-center">
+            <div class="col-md-12" style="min-width: 1000px;">
+                <div class="clearfix down">
+                    <div class="down-iphone" id="down-iphone">
+                        <h4>iPhone</h4>
+
+{#                        <p>发布日期：2016-06-05</p>#}
+
+                        <div class="down-android-link">
+{#                            <a href="https://itunes.apple.com/us/app/kong-qi-guo/id987403581?l=zh&amp;ls=1&amp;mt=8"#}
+{#                               class="down-btn" target="_blank">下载</a>#}
+                            <img src="{% static "img/pomelo/IOS.png" %}" class="qrcode"/>
+                        </div>
+                    </div>
+
+                    <div class="down-iphone down-android" id="down-android">
+                        <h4>Android</h4>
+
+{#                        <p>发布日期：2016-06-02</p>#}
+
+                        <div class="down-android-link">
+{#                            <a href="http://download.moji001.com/download/airnut-V2.1.0.02-release-c7777.apk"#}
+{#                               class="down-btn" target="_blank">下载</a>#}
+
+                            <img src="{% static "img/pomelo/android.png" %}" class="qrcode"/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-					</div>
-				</div>
-		</section>
+    </section>
 
-{#		<section class="section bg-theme-inverse">#}
-{#				<div id="owl-demo" class="owl-carousel carousel-white">#}
-{#						<div>#}
-{#							<div class="col-md-6   col-md-offset-3">#}
-{#									<blockquote class="text-center"> Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis aliquam. Aliquam in tortor enim. </blockquote>#}
-{#									<p class="text-center">Zicedemo - <em> Web designer , Programme Director</em></p>#}
-{#							</div>#}
-{#						</div>#}
-{#						<div>#}
-{#							<div class="col-md-6   col-md-offset-3">#}
-{#									<h3 class="blockquote text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo.</h3>#}
-{#									<p class="text-center">Caroline Hennigan, Programme Director, Broadway</p>#}
-{#							</div>#}
-{#						</div>#}
-{#						<div>#}
-{#							<div class="col-md-6   col-md-offset-3">#}
-{#									<blockquote class="text-center"> Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world. </blockquote>#}
-{#									<p class="text-center">Caroline Hennigan, Programme Director, Broadway</p>#}
-{#							</div>#}
-{#						</div>#}
-{#				</div>#}
-{#		</section>	#}
+    {#		<section class="section bg-theme-inverse">#}
+    {#				<div id="owl-demo" class="owl-carousel carousel-white">#}
+    {#						<div>#}
+    {#							<div class="col-md-6   col-md-offset-3">#}
+    {#									<blockquote class="text-center"> Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci ut et lobortis aliquam. Aliquam in tortor enim. </blockquote>#}
+    {#									<p class="text-center">Zicedemo - <em> Web designer , Programme Director</em></p>#}
+    {#							</div>#}
+    {#						</div>#}
+    {#						<div>#}
+    {#							<div class="col-md-6   col-md-offset-3">#}
+    {#									<h3 class="blockquote text-center"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo.</h3>#}
+    {#									<p class="text-center">Caroline Hennigan, Programme Director, Broadway</p>#}
+    {#							</div>#}
+    {#						</div>#}
+    {#						<div>#}
+    {#							<div class="col-md-6   col-md-offset-3">#}
+    {#									<blockquote class="text-center"> Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world. </blockquote>#}
+    {#									<p class="text-center">Caroline Hennigan, Programme Director, Broadway</p>#}
+    {#							</div>#}
+    {#						</div>#}
+    {#				</div>#}
+    {#		</section>	#}
 
 {% endblock %}
 
 {% block js %}
-<script type="text/javascript" src="{% static "plugins/isotope/isotope.js" %}"></script>	
-<script type="text/javascript">
-	$(function() {
+    <script type="text/javascript" src="{% static "plugins/isotope/isotope.js" %}"></script>
+    <script type="text/javascript">
+        $(function () {
 
-	// Initialize box isotope 
-        var $container= $('.mosaic');
-        var $filter= $('.portfolio-filter');
+            // Initialize box isotope
+            var $container = $('.mosaic');
+            var $filter = $('.portfolio-filter');
 
-	$container.isotope({
-			filter : '*',
-			layoutMode : 'fitRows',
-			animationOptions : {  duration : 750, easing : 'linear' }
-	}); 
-        $filter.find('a').click(function() {
-				var selector = $(this).attr('data-filter');
-				$filter.find('a').removeClass('active');
-				$(this).addClass('active');
-				$container.isotope({ 
-					filter: selector,
-					animationOptions   : { animationDuration  : 750, easing: 'linear',   queue: false  }
-				});
-				return false;
-        }); 
-	}); 
+            $container.isotope({
+                filter: '*',
+                layoutMode: 'fitRows',
+                animationOptions: {duration: 750, easing: 'linear'}
+            });
+            $filter.find('a').click(function () {
+                var selector = $(this).attr('data-filter');
+                $filter.find('a').removeClass('active');
+                $(this).addClass('active');
+                $container.isotope({
+                    filter: selector,
+                    animationOptions: {animationDuration: 750, easing: 'linear', queue: false}
+                });
+                return false;
+            });
+        });
 
-</script>
+    </script>
 {% endblock %}

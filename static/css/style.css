@@ -1661,3 +1661,77 @@ ul.navbar-xs li a:hover {
 .down-android-link li a:hover {
   color:#58a4ed;
 }
+
+
+        .video-item {
+    position: absolute;
+    top: 50%;
+        right: -545px;
+    margin-top: 80px;
+    width: 330px;
+}
+
+    .video-item li.play {
+    background: url(../img/pomelo/play_video.jpg) no-repeat center center;
+    background-size: 100%;
+}
+
+    .video-item li {
+    width: 140px;
+    height: 140px;
+    margin: 0 0 0 5px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+    .video-item li span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 86px;
+    height: 86px;
+    margin-top: -43px;
+    margin-left: -43px;
+    display: block;
+}
+
+    .video-item li.play span {
+    background: url(../img/pomelo/air-indoor-play.png) no-repeat 0 0;
+    cursor: pointer;
+}
+
+    .pop-bg {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+    .pop-wrap {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -239px 0 0 -429px;
+    width: 858px;
+    height: 478px;
+    padding: 8px;
+    z-index: 100;
+    display: none;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+    .pop-wrap .close {
+    height: 32px;
+    width: 32px;
+    background: url(../img/pomelo/close.png) no-repeat left top;
+    position: absolute;
+    top: 1px;
+    right: -40px;
+    cursor: pointer;
+}
+
