@@ -117,24 +117,24 @@
 
  
 $(window).scroll(function() {
-   if ($(window).width() > 768 ) {
-		  if ($(window).scrollTop() > 70) {
-			$('#header').addClass('fixedHeader');
-		  } else {
-			$('#header').removeClass('fixedHeader');
-		  }
-		  if ($(window).scrollTop() > 500) {
-			$('#header').addClass('colorHeader');
-		  }  else {
-			$('#header').removeClass('colorHeader');
-		  }
-  }
+  // if ($(window).width() > 768 ) {
+	//	  if ($(window).scrollTop() > 70) {
+	//		$('#header').addClass('fixedHeader');
+	//	  } else {
+	//		$('#header').removeClass('fixedHeader');
+	//	  }
+	//	  if ($(window).scrollTop() > 500) {
+	//		$('#header').addClass('colorHeader');
+	//	  }  else {
+	//		$('#header').removeClass('colorHeader');
+	//	  }
+  //}
 });
 
 $( window ).resize(function() {
- 	if ($(window).width() < 767 ) {
-		$('#header').removeClass('fixedHeader');
-	}
+ 	//if ($(window).width() < 767 ) {
+	//	$('#header').removeClass('fixedHeader');
+	//}
 });
 		 
 		

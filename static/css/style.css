@@ -111,7 +111,7 @@ body::-webkit-scrollbar-thumb {
   border-width: 0;
 }
 #header.fixedHeader {
-  position: fixed;
+  position: fixed;opacity: 0.9;
   height: auto;
 }
 #header.fixedHeader #nav-top {
@@ -145,7 +145,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #header-space {
-  margin-top: 141px;
+  margin-top: 70px;
 }
 
 #headline, #headline2 {
@@ -509,22 +509,21 @@ ul.social-top li a i {
   border: none;
 }
 .navbar li.active a {
-  color: #0aa699;
+  color: #34a3e3;
   background-color: transparent;
 }
 .navbar li.dropdown a:hover, .navbar li.dropdown.open a.dropdown-toggle {
-  color: #0aa699;
-  background-color: #f7f8f9;
+  color: #34a3e3;
+  /*background-color: #f7f8f9;*/
 }
 .navbar li a {
-  font-family: "Open Sans","Helvetica","Arial";
+  font-family: "Microsoft YaHei", SimHei, Verdana, Arial, sans-serif;
   text-rendering: optimizeLegibility;
   letter-spacing: 1px;
-  font-size: 0.875em;
+  font-size: 13px;
   padding-top: 50px;
   padding-bottom: 30px;
-  color: #999;
-  font-weight: 500;
+  color: #767d89;
   text-transform: uppercase;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -986,7 +985,7 @@ ul.navbar-xs li a:hover {
 }
 @media all and (min-width: 992px) {
   .navbar-right {
-    margin-right: -15px;
+    margin-right: 20%;
   }
 }
 @media all and (max-width: 767px) {
@@ -1492,7 +1491,7 @@ ul.navbar-xs li a:hover {
 }
 
 .bg-darkorange {
-  background-color: #f9ba46 !important;
+  background-color: #f7f7f7 !important;
   color: white !important;
 }
 .bg-darkorange.form-control {
@@ -1734,4 +1733,9 @@ ul.navbar-xs li a:hover {
     right: -40px;
     cursor: pointer;
 }
+
+    .backto02{
+      background: url(../img/pomelo/description.jpg) no-repeat center center;
+      background-size: 100% 100%;
+    }
 

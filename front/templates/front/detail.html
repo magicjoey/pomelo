@@ -84,6 +84,17 @@
         }
 
 
+
+    figure {
+    width: 280px;
+height: 225px;
+position: absolute;
+top: 10%;
+right: -500px;
+margin-top: 80px;
+}
+
+
     </style>
 {% endblock %}
 {% block content %}
@@ -93,7 +104,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 animated" data-effect="fadeInDown">
-                    <h1 class="highlight-title"><strong>智能</strong>婴儿车</h1>
+                    <h1 class="highlight-title" style="color:#ccc"><strong>智能</strong>婴儿车</h1>
                     {#                                    <div id="round360">#}
                     {#                                        <img id="img1" src="{% static "img/pomelo/product0/miaov (0).jpg" %}" />#}
                     {#<div id="bg"></div>#}
@@ -110,9 +121,20 @@
                         {#								<div class="col-md-6 text-center">#}
                         {#										<div class="img-stack" style="margin-top:0px; margin-bottom:-28px">#}
 
+
+                            <figure>
+            <img src="{% static "img/pomelo/air-indoor-b.png" %}" alt="" height="225" width="280">
+        </figure>
                         <ul class="video-item">
                             <li class="play backto backto01">
                                 <span></span>
+                            </li>
+
+
+                            <li class="home backto backto02">
+                                <a href="{% static "img/pomelo/description.pdf" %}" target="_blank">
+                                <span></span>
+                                    </a>
                             </li>
 {#                            <li class="home backto backto02">#}
 {#                                <span></span>#}
@@ -220,6 +242,82 @@
                              data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
                         <!-- LAYERS -->
                     </li>
+                </ul>
+                {#							<div class="tp-bannertimer tp-bottom"></div>#}
+            </div>
+        </div>
+    </section>
+
+    <section id="slide3" class="bg-gray-lighter">
+
+        <div class="tp-banner-container">
+            <div class="tp-banner" id="slide_detail3">
+                <ul>
+                    <!-- SLIDE  -->
+                    <li data-transition="slideleft" data-slotamount="2" data-masterspeed="500">
+                        <!-- MAIN IMAGE -->
+                        {#                                    <img src="{% static "img/pomelo/1920.jpg" %}" alt="slidebg1" class="bg-theme-inverse">#}
+                        <img src="{% static "img/detail/detail1.jpg" %}" alt="slidebg1" class="bg-theme-inverse">
+
+                    </li>
+                    <li data-transition="slideleft" data-slotamount="7" data-masterspeed="1500">
+                        <!-- MAIN IMAGE -->
+                        <img src="{% static "img/detail/detail2.jpg" %}" alt="slidebg1" data-bgfit="cover"
+                             data-bgposition="left top" data-bgrepeat="no-repeat">
+                    </li>
+                    <!-- SLIDE  -->
+                    <li data-transition="slideleft" data-slotamount="7" data-masterspeed="1000">
+                        <!-- MAIN IMAGE -->
+                        <img src="{% static "img/detail/detail3.jpg" %}" style='background-color:#b2c4cc' alt=""
+                             data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
+
+                    </li>
+
+                    <li data-transition="slideleft" data-slotamount="7" data-masterspeed="1000">
+                        <!-- MAIN IMAGE -->
+                        <img src="{% static "img/detail/detail4.jpg" %}" style='background-color:#b2c4cc' alt=""
+                             data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
+
+                </ul>
+                {#							<div class="tp-bannertimer tp-bottom"></div>#}
+            </div>
+        </div>
+    </section>
+
+    <section id="slide4" class="bg-gray-lighter">
+
+        <div class="tp-banner-container">
+            <div class="tp-banner" id="slide_detail4">
+                <ul>
+                    <!-- SLIDE  -->
+                    <li data-transition="slideleft" data-slotamount="2" data-masterspeed="500">
+                        <!-- MAIN IMAGE -->
+                        {#                                    <img src="{% static "img/pomelo/1920.jpg" %}" alt="slidebg1" class="bg-theme-inverse">#}
+                        <img src="{% static "img/detail/detail1.jpg" %}" alt="slidebg1" class="bg-theme-inverse">
+
+                    </li>
+                    <li data-transition="slideleft" data-slotamount="7" data-masterspeed="1500">
+                        <!-- MAIN IMAGE -->
+                        <img src="{% static "img/detail/detail2.jpg" %}" alt="slidebg1" data-bgfit="cover"
+                             data-bgposition="left top" data-bgrepeat="no-repeat">
+                    </li>
+                    <!-- SLIDE  -->
+                    <li data-transition="slideleft" data-slotamount="7" data-masterspeed="1000">
+                        <!-- MAIN IMAGE -->
+                        <img src="{% static "img/detail/detail3.jpg" %}" style='background-color:#b2c4cc' alt=""
+                             data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
+
+                    </li>
+
+                    <li data-transition="slideleft" data-slotamount="7" data-masterspeed="1000">
+                        <!-- MAIN IMAGE -->
+                        <img src="{% static "img/detail/detail4.jpg" %}" style='background-color:#b2c4cc' alt=""
+                             data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
+
                 </ul>
                 {#							<div class="tp-bannertimer tp-bottom"></div>#}
             </div>
@@ -334,19 +432,19 @@
     {#				</div>#}
     {#		</section>#}
 
-    <section class="section bg-inverse">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 animated" data-effect="pulse">
-                    <h3><strong>现在购买还有柚子特惠价优惠</strong><br>
-                        请不要错过哦 </h3>
-                </div>
-                <div class="col-md-6 text-center"><a class="btn btn-lg btn-theme-inverse animated"
-                                                     data-effect="fadeInRight" title=""
-                                                     href="https://sangeyouzi.tmall.com" target="blank"> 立即购买 </a></div>
-            </div>
-        </div>
-    </section>
+{#    <section class="section bg-inverse">#}
+{#        <div class="container">#}
+{#            <div class="row">#}
+{#                <div class="col-md-6 animated" data-effect="pulse">#}
+{#                    <h3><strong>现在购买还有柚子特惠价优惠</strong><br>#}
+{#                        请不要错过哦 </h3>#}
+{#                </div>#}
+{#                <div class="col-md-6 text-center"><a class="btn btn-lg btn-theme-inverse animated"#}
+{#                                                     data-effect="fadeInRight" title=""#}
+{#                                                     href="https://sangeyouzi.tmall.com" target="blank"> 立即购买 </a></div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </section>#}
 
     <div class="pop-bg"></div>
 <div class="pop-wrap">
@@ -380,6 +478,28 @@
 
             $('#slide_detail2').revolution({
                 delay: 9000,
+                startwidth: 2560,
+                startheight: 1440,
+                hideThumbs: 10,
+                lazyLoad: "on",
+                onHoverStop: "off",
+                fullWidth: "on",
+                forceFullWidth: "on"
+            });
+
+            revapi = $('#slide_detail3').revolution({
+                delay: 5000,
+                startwidth: 2560,
+                startheight: 1440,
+                hideThumbs: 10,
+                lazyLoad: "on",
+                onHoverStop: "off",
+                fullWidth: "on",
+                forceFullWidth: "on"
+            });
+
+            revapi = $('#slide_detail4').revolution({
+                delay: 5000,
                 startwidth: 2560,
                 startheight: 1440,
                 hideThumbs: 10,
