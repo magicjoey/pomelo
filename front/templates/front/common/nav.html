@@ -21,19 +21,19 @@
 										<ul class="nav navbar-nav navbar-right hidden-xs" id="navigation">
                                             {% for nav in nav_list %}
                                                 {% if nav.title == "儿童推车" %}
-                                                    <li class="dropdown" >
+                                                    <li class="dropdown" id="child_nav">
 														<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">儿童推车 &nbsp; <i class="fa fa-angle-down"></i></a>
 														<ul class="dropdown-menu dropdown-menu-left  multi-level animated fast" data-effect="fadeInDown" style="width: 500px;padding-bottom: 0px;">
 																<li><a href="/detail">
                                                                     <img src="{% static "img/pomelo/product_detail.jpg" %}" class="detail_img"/>
-                                                                    <p>三个柚子儿童车</p></a></li>
+                                                                    <p>高景观儿童推车</p></a></li>
 														</ul>
 												</li>
                                                 {% else %}
                                                 <li><a href="{{ nav.url }}">{{ nav.title }}</a></li>
                                                 {% endif %}
                                             {% endfor %}
-                                          <li class="dropdown" >
+                                          <li class="dropdown" style="    margin-top: -3px;margin-left: 20px;">
 														<a href="#" class="dropdown-toggle" id="buyBtn" data-toggle="dropdown" data-hover="dropdown">立即购买 &nbsp; <i class="fa fa-angle-down"></i></a>
 														<ul class="dropdown-menu dropdown-menu-left  multi-level animated fast" data-effect="fadeInDown">
 																<li><a href="http://mall.jd.com/index-547370.html" target="_blank">京东旗舰店</a></li>

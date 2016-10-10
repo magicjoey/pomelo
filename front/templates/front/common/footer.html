@@ -5,22 +5,24 @@
 										<div class="col-md-4">
 												<div class="widget">
 														<h4>关于我们</h4>
-														<p>如今的智能设备已经成为时尚标签，但是在母婴领域，智能设备的普及率却非常低。最近笔者了解到，国内一家科技公司研发了一款跨界体验的智能婴儿推车，号称“全球首款互联网智能推车”，该研发团队表示婴儿推车不应该只作为宝宝的出行工具，它应该能为宝宝做的更多，而且父母带娃太枯燥，三个柚子致力于让辣妈潮爸的带娃“更轻松、更有趣”。
+														<p>三个柚子全自主研发的互联网智能婴儿推车，主要针对宝宝的健康、成长、生活这三个维度做深度的设计，
+															同时针对父母与宝宝的亲子体验做了创新设计，主要提供健康管家、生活管家、亲子新体验、成长新体验等服务，
+															用户将通过连接婴儿推车与移动端APP享受全新极致的育儿体验。
 														</p>
 												</div>
 										</div>
 										<div class="col-md-4">
 												<h4>标签</h4>
 												<div class="tagcloud">
-														<a href="#">婴儿车</a>
+														<a href="#">婴儿推车</a>
 														<a href="#">智能</a>
 														<a href="#">时尚</a>
-														<a href="#">安全</a>
-														<a href="#">高颜值</a>
-														<a href="#">APP操控</a>
+														<a href="#">高景观</a>
+														<a href="#">舒适</a>
+														<a href="#">智能APP</a>
 														<a href="#">智能体重秤 </a>
-														<a href="#">智能身高管家</a>
-														<a href="#">智能出行里程</a>
+														<a href="#">身高管家</a>
+														<a href="#">智能出行</a>
 														<a href="#">育儿云社区</a>
 												</div>
 										</div>
@@ -30,15 +32,15 @@
 														<div class="contacts">
 																<div class="contacts-item"> 
 																		<i class="fa fa-map-marker"></i> 
-																		<span class="contacts-item-value">上海市真南路1370号 <br></span>
+																		<span class="contacts-item-value">上海市普陀区真南路1370号 <br></span>
 																</div>
 																<div class="contacts-item">
 																		<i class="fa fa-phone"></i>
-																		<span class="contacts-item-value">+(86) 13636499021</span>
+																		<span class="contacts-item-value">021-6698-9233</span>
 																</div>
 																<div class="contacts-item">
 																		<i class="fa fa-envelope-o"></i>
-																		<span class="contacts-item-value"><a href="mailto:christian_xia@163.com">christian_xia@163.com</a></span>
+																		<span class="contacts-item-value"><a href="mailto:christian_xia@163.com">joan@3pomelos.com</a></span>
 																</div>
 														</div>
 												</div>
@@ -50,7 +52,7 @@
 						<div class="container">
 								<div class="row">
 										<div class="col-md-6">
-												<div class="copyright">&copy; 2016 All rights reserved. <a href="http://metastudio.com.cn">Powered by MetaStudio</a></div>
+												<div class="copyright">&copy; 2016 All rights reserved. </div>
 										</div>
 
 {#                                        <div>#}
@@ -67,3 +69,18 @@
 						</div>
 				</section>
 		</footer>
+
+<script type="text/javascript">
+    $(function(){
+        var checked = false;
+        $("#navigation>li>a").each(function(){
+            if(location.href.indexOf($(this).attr("href"))>-1){
+                $(this).parent("li").addClass("active");
+                checked = true;
+            }
+        })  ;
+        if(!checked){
+            $("#child_nav").addClass("active");
+        }
+    });
+</script>
