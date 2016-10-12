@@ -1739,3 +1739,28 @@ ul.navbar-xs li a:hover {
       background-size: 100% 100%;
     }
 
+.front-page {
+    bottom: 30px;
+    height: 125px;
+    position: fixed;
+    right: 10px;
+    width: 55px;
+    z-index: 99;
+}
+
+.front-page .page-pre:hover, .front-page .page-next:hover, .front-page .page-pre.blur, .front-page .page-next.blur {
+    opacity: 0.6;
+}
+
+.front-page .page-pre, .front-page .page-next {
+    background: rgba(0, 0, 0, 0) url("../img/btn-move.png") no-repeat scroll 0 0;
+    cursor: pointer;
+    display: block;
+    height: 55px;
+    width: 55px;
+}
+
+.front-page .page-next {
+    background-position: 0 -63px;
+    margin-top: 10px;
+}

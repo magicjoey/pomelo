@@ -83,190 +83,232 @@
             top: 140px;
         }
 
+        figure {
+            width: 280px;
+            height: 225px;
+            position: absolute;
+            top: 80px;
+            right: -500px;
+            margin-top: 80px;
+        }
 
+        .indoor_page_wrap {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            right: 0;
+            transition: all 0.5s ease 0s;
+            width: 100%;
+        }
 
-    figure {
-    width: 280px;
-height: 225px;
-position: absolute;
-top: 80px;
-right: -500px;
-margin-top: 80px;
-}
-
+        .indoor_page_wrap .indoor-page {
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
 
     </style>
 {% endblock %}
 {% block content %}
-    <section id="header-space"></section>
+    <div class="indoor_page_wrap">
+        <section id="header-space"></section>
 
-    <section class="section bg-darkorange">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 animated" data-effect="fadeInDown">
-                    <h1 class="highlight-title" style="color:#ccc"><strong>三个柚子</strong>智能推车</h1>
-                    {#                                    <div id="round360">#}
-                    {#                                        <img id="img1" src="{% static "img/pomelo/product0/miaov (0).jpg" %}" />#}
-                    {#<div id="bg"></div>#}
-                    {#<div id="prog">#}
-                    {#	360度全景展示 载入中......<span>0%</span>#}
-                    {#	<div id="bar"></div>#}
-                    {#</div>#}
-                    {##}
-                    {#                                    </div>#}
-                    <div class="bg d6-3d-product-explorer">
+        <section class="section bg-darkorange indoor-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 animated" data-effect="fadeInDown">
+                        <h1 class="highlight-title" style="color:#ccc"><strong>三个柚子</strong>智能推车</h1>
+                        {#                                    <div id="round360">#}
+                        {#                                        <img id="img1" src="{% static "img/pomelo/product0/miaov (0).jpg" %}" />#}
+                        {#<div id="bg"></div>#}
+                        {#<div id="prog">#}
+                        {#	360度全景展示 载入中......<span>0%</span>#}
+                        {#	<div id="bar"></div>#}
+                        {#</div>#}
+                        {##}
+                        {#                                    </div>#}
+                        <div class="bg d6-3d-product-explorer">
 
-                        <div id="myCar" style="height: 336px;width: 750px;"></div>
-                        {#								</div>#}
-                        {#								<div class="col-md-6 text-center">#}
-                        {#										<div class="img-stack" style="margin-top:0px; margin-bottom:-28px">#}
+                            <div id="myCar" style="height: 336px;width: 750px;"></div>
+                            {#								</div>#}
+                            {#								<div class="col-md-6 text-center">#}
+                            {#										<div class="img-stack" style="margin-top:0px; margin-bottom:-28px">#}
 
 
                             <figure>
-            <img src="{% static "img/pomelo/air-indoor-b.png" %}" alt="" height="225" width="280">
-        </figure>
-                        <ul class="video-item">
-                            <li class="play backto backto01">
-                                <span></span>
-                            </li>
+                                <img src="{% static "img/pomelo/air-indoor-b.png" %}" alt="" height="225" width="280">
+                            </figure>
+                            <ul class="video-item">
+                                <li class="play backto backto01">
+                                    <span></span>
+                                </li>
 
 
-                            <li class="home backto backto02">
-                                <a href="{% static "img/pomelo/description.pdf" %}" target="_blank">
-                                <span></span>
+                                <li class="home backto backto02">
+                                    <a href="{% static "img/pomelo/description.pdf" %}" target="_blank">
+                                        <span></span>
                                     </a>
-                            </li>
-{#                            <li class="home backto backto02">#}
-{#                                <span></span>#}
-{#                            </li>#}
-                            <!--<li class="link backto backto03">
-                                <a href="/preorder">
-                                    <samp>空气果</samp><br/><em>免单计划</em></a>
-                            </li>-->
-                        </ul>
+                                </li>
+                                {#                            <li class="home backto backto02">#}
+                                {#                                <span></span>#}
+                                {#                            </li>#}
+                                <!--<li class="link backto backto03">
+                                    <a href="/preorder">
+                                        <samp>空气果</samp><br/><em>免单计划</em></a>
+                                </li>-->
+                            </ul>
 
-                        {#                                            <embed src="http://player.youku.com/player.php/sid/XMTU5MjYwNjMxMg==/v.swf" allowFullScreen="true" quality="high" width="480" height="400" class="youku" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>#}
-                        {#												<img src="{% static "img/pomelo/main.png" %}" alt="" class="img-responsive img-bottom  animated" data-effect="slideInRight">#}
-                        {#												<img src="{% static "img/theme-pics/fl2.png" %}" alt="" class="img-responsive img-bottom  bottom-over animated" data-effect="slideInRight" data-start="300">#}
-                        {#												<img src="{% static "img/theme-pics/fl3.png" %}" alt="" class="img-responsive img-bottom  bottom-over animated" data-effect="fadeInUp" data-start="1200">#}
-                        {#										</div>#}
+                            {#                                            <embed src="http://player.youku.com/player.php/sid/XMTU5MjYwNjMxMg==/v.swf" allowFullScreen="true" quality="high" width="480" height="400" class="youku" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>#}
+                            {#												<img src="{% static "img/pomelo/main.png" %}" alt="" class="img-responsive img-bottom  animated" data-effect="slideInRight">#}
+                            {#												<img src="{% static "img/theme-pics/fl2.png" %}" alt="" class="img-responsive img-bottom  bottom-over animated" data-effect="slideInRight" data-start="300">#}
+                            {#												<img src="{% static "img/theme-pics/fl3.png" %}" alt="" class="img-responsive img-bottom  bottom-over animated" data-effect="fadeInUp" data-start="1200">#}
+                            {#										</div>#}
+                        </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section id="slide" class="bg-gray-lighter indoor-page">
+
+            <div class="tp-banner-container">
+                <div class="tp-banner" id="slide_detail1">
+                    <ul>
+                        <!-- SLIDE  -->
+                        <li data-transition="slideleft" data-slotamount="3" data-masterspeed="1000">
+                            <!-- MAIN IMAGE -->
+                            {#                                    <img src="{% static "img/pomelo/2560.jpg" %}" alt="slidebg1" class="bg-theme-inverse">#}
+                            <img src="{% static "img/detail/detail1.jpg" %}" alt="slidebg1" class="bg-theme-inverse">
+
+                        </li>
+                        <li data-transition="slideleft" data-slotamount="3" data-masterspeed="1000">
+                            <!-- MAIN IMAGE -->
+                            <img src="{% static "img/detail/detail2.jpg" %}" alt="slidebg1" data-bgfit="cover"
+                                 data-bgposition="left top" data-bgrepeat="no-repeat">
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-transition="slideleft" data-slotamount="3" data-masterspeed="1000">
+                            <!-- MAIN IMAGE -->
+                            <img src="{% static "img/detail/detail3.jpg" %}" style='background-color:#b2c4cc' alt=""
+                                 data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                            <!-- LAYERS -->
+
+                        </li>
+
+
+                    </ul>
+                    {#							<div class="tp-bannertimer tp-bottom"></div>#}
+                </div>
+            </div>
+        </section>
+
+        <section id="slide" class="bg-gray-lighter indoor-page">
+
+            <div class="tp-banner-container">
+                <div class="tp-banner" id="slide_detail2">
+                    <ul>
+                        <!-- SLIDE  -->
+                        <li data-transition="slideleft" data-slotamount="4" data-masterspeed="1000">
+                            <!-- MAIN IMAGE -->
+                            <img src="{% static "img/detail/detail21.jpg" %}" alt="slidebg1" class="bg-theme-inverse">
+
+                        </li>
+                        <li data-transition="slideleft" data-slotamount="4" data-masterspeed="1000">
+                            <!-- MAIN IMAGE -->
+                            <img src="{% static "img/detail/detail22.jpg" %}" alt="slidebg1" data-bgfit="cover"
+                                 data-bgposition="left top" data-bgrepeat="no-repeat">
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-transition="slideleft" data-slotamount="4" data-masterspeed="1000">
+                            <!-- MAIN IMAGE -->
+                            <img src="{% static "img/detail/detail23.jpg" %}" style='background-color:#b2c4cc' alt=""
+                                 data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                            <!-- LAYERS -->
+
+                        </li>
+
+                        <li data-transition="slideleft" data-slotamount="4" data-masterspeed="1000">
+                            <!-- MAIN IMAGE -->
+                            <img src="{% static "img/detail/detail24.jpg" %}" style='background-color:#b2c4cc' alt=""
+                                 data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                            <!-- LAYERS -->
+
+                        </li>
+
+
+                    </ul>
+                    {#							<div class="tp-bannertimer tp-bottom"></div>#}
+                </div>
+            </div>
+        </section>
+
+        <section id="slide3" class="bg-gray-lighter indoor-page">
+
+            <div class="tp-banner-container">
+                <div class="tp-banner" id="slide_detail3">
+                    <ul>
+                        <!-- SLIDE  -->
+                        <li data-transition="slideleft" data-slotamount="1" data-masterspeed="500">
+                            <!-- MAIN IMAGE -->
+                            <img src="{% static "img/detail/detail31.jpg" %}" alt="slidebg1" class="bg-theme-inverse">
+
+                        </li>
+
+
+                    </ul>
+                    {#							<div class="tp-bannertimer tp-bottom"></div>#}
+                </div>
+            </div>
+        </section>
+
+        <section id="slide4" class="bg-gray-lighter indoor-page">
+
+            <div class="tp-banner-container">
+                <div class="tp-banner" id="slide_detail4">
+                    <ul>
+                        <!-- SLIDE  -->
+                        <li data-transition="slideleft" data-slotamount="1" data-masterspeed="1000">
+                            <!-- MAIN IMAGE -->
+                            <img src="{% static "img/detail/detail41.jpg" %}" style='background-color:#b2c4cc' alt=""
+                                 data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                            <!-- LAYERS -->
+
+                        </li>
+
+
+                    </ul>
+                    {#							<div class="tp-bannertimer tp-bottom"></div>#}
+                </div>
+            </div>
+        </section>
+
+        <div class="front-page">
+            <span class="page-pre blur"></span>
+            <span class="page-next"></span>
+        </div>
+    </div>
+
+    <section class="section bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="copyright">&copy; 2016 All rights reserved.</div>
+                </div>
+
+                {#                                        <div>#}
+                {#                                             #}
+                {#                                        </div>#}
+                <div class="col-md-6">
+                    <ul class="footer-link pull-right">
+                        <li>沪ICP备16009803号-1</li>
+                        {#														<li><a href="#">隐私政策</a></li>#}
+                        {#														<li><a href="#">条款 &amp; 条件</a></li>#}
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-    <section id="slide" class="bg-gray-lighter">
 
-        <div class="tp-banner-container">
-            <div class="tp-banner" id="slide_detail1">
-                <ul>
-                    <!-- SLIDE  -->
-                    <li data-transition="slideleft" data-slotamount="3" data-masterspeed="1000">
-                        <!-- MAIN IMAGE -->
-                        {#                                    <img src="{% static "img/pomelo/1920.jpg" %}" alt="slidebg1" class="bg-theme-inverse">#}
-                        <img src="{% static "img/detail/detail1.jpg" %}" alt="slidebg1" class="bg-theme-inverse">
-
-                    </li>
-                    <li data-transition="slideleft" data-slotamount="3" data-masterspeed="1000">
-                        <!-- MAIN IMAGE -->
-                        <img src="{% static "img/detail/detail2.jpg" %}" alt="slidebg1" data-bgfit="cover"
-                             data-bgposition="left top" data-bgrepeat="no-repeat">
-                    </li>
-                    <!-- SLIDE  -->
-                    <li data-transition="slideleft" data-slotamount="3" data-masterspeed="1000">
-                        <!-- MAIN IMAGE -->
-                        <img src="{% static "img/detail/detail3.jpg" %}" style='background-color:#b2c4cc' alt=""
-                             data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-                        <!-- LAYERS -->
-
-                    </li>
-
-
-                </ul>
-                {#							<div class="tp-bannertimer tp-bottom"></div>#}
-            </div>
-        </div>
-    </section>
-
-    <section id="slide" class="bg-gray-lighter">
-
-        <div class="tp-banner-container">
-            <div class="tp-banner" id="slide_detail2">
-                <ul>
-                    <!-- SLIDE  -->
-                    <li data-transition="slideleft" data-slotamount="4" data-masterspeed="1000">
-                        <!-- MAIN IMAGE -->
-                        <img src="{% static "img/detail/detail21.jpg" %}" alt="slidebg1" class="bg-theme-inverse">
-
-                    </li>
-                    <li data-transition="slideleft" data-slotamount="4" data-masterspeed="1000">
-                        <!-- MAIN IMAGE -->
-                        <img src="{% static "img/detail/detail22.jpg" %}" alt="slidebg1" data-bgfit="cover"
-                             data-bgposition="left top" data-bgrepeat="no-repeat">
-                    </li>
-                    <!-- SLIDE  -->
-                    <li data-transition="slideleft" data-slotamount="4" data-masterspeed="1000">
-                        <!-- MAIN IMAGE -->
-                        <img src="{% static "img/detail/detail23.jpg" %}" style='background-color:#b2c4cc' alt=""
-                             data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-                        <!-- LAYERS -->
-
-                    </li>
-
-                                        <li data-transition="slideleft" data-slotamount="4" data-masterspeed="1000">
-                        <!-- MAIN IMAGE -->
-                        <img src="{% static "img/detail/detail24.jpg" %}" style='background-color:#b2c4cc' alt=""
-                             data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-                        <!-- LAYERS -->
-
-                    </li>
-
-
-                </ul>
-                {#							<div class="tp-bannertimer tp-bottom"></div>#}
-            </div>
-        </div>
-    </section>
-
-    <section id="slide3" class="bg-gray-lighter">
-
-        <div class="tp-banner-container">
-            <div class="tp-banner" id="slide_detail3">
-                <ul>
-                    <!-- SLIDE  -->
-                    <li data-transition="slideleft" data-slotamount="1" data-masterspeed="500">
-                        <!-- MAIN IMAGE -->
-                        <img src="{% static "img/detail/detail31.jpg" %}" alt="slidebg1" class="bg-theme-inverse">
-
-                    </li>
-
-
-                </ul>
-                {#							<div class="tp-bannertimer tp-bottom"></div>#}
-            </div>
-        </div>
-    </section>
-
-    <section id="slide4" class="bg-gray-lighter">
-
-        <div class="tp-banner-container">
-            <div class="tp-banner" id="slide_detail4">
-                <ul>
-                    <!-- SLIDE  -->
-                    <li data-transition="slideleft" data-slotamount="1" data-masterspeed="1000">
-                        <!-- MAIN IMAGE -->
-                        <img src="{% static "img/detail/detail41.jpg" %}" style='background-color:#b2c4cc' alt=""
-                             data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-                        <!-- LAYERS -->
-
-                    </li>
-
-
-                </ul>
-                {#							<div class="tp-bannertimer tp-bottom"></div>#}
-            </div>
-        </div>
-    </section>
+    {% block bottom %}{% endblock %}
 
 
     {#		<section class="section">#}
@@ -376,34 +418,42 @@ margin-top: 80px;
     {#				</div>#}
     {#		</section>#}
 
-{#    <section class="section bg-inverse">#}
-{#        <div class="container">#}
-{#            <div class="row">#}
-{#                <div class="col-md-6 animated" data-effect="pulse">#}
-{#                    <h3><strong>现在购买还有柚子特惠价优惠</strong><br>#}
-{#                        请不要错过哦 </h3>#}
-{#                </div>#}
-{#                <div class="col-md-6 text-center"><a class="btn btn-lg btn-theme-inverse animated"#}
-{#                                                     data-effect="fadeInRight" title=""#}
-{#                                                     href="https://sangeyouzi.tmall.com" target="blank"> 立即购买 </a></div>#}
-{#            </div>#}
-{#        </div>#}
-{#    </section>#}
+    {#    <section class="section bg-inverse">#}
+    {#        <div class="container">#}
+    {#            <div class="row">#}
+    {#                <div class="col-md-6 animated" data-effect="pulse">#}
+    {#                    <h3><strong>现在购买还有柚子特惠价优惠</strong><br>#}
+    {#                        请不要错过哦 </h3>#}
+    {#                </div>#}
+    {#                <div class="col-md-6 text-center"><a class="btn btn-lg btn-theme-inverse animated"#}
+    {#                                                     data-effect="fadeInRight" title=""#}
+    {#                                                     href="https://sangeyouzi.tmall.com" target="blank"> 立即购买 </a></div>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </section>#}
 
     <div class="pop-bg"></div>
-<div class="pop-wrap">
-  <div class="close"></div>
-  <div>
-    <embed type="application/x-shockwave-flash" width="858" height="478" src="http://player.youku.com/player.php/sid/XMTU5MjYwNjMxMg==/v.swf" allowfullscreen="true" quality="high" allowscriptaccess="always" align="middle">
+    <div class="pop-wrap">
+        <div class="close"></div>
+        <div>
+            <embed type="application/x-shockwave-flash" width="858" height="478"
+                   src="http://player.youku.com/player.php/sid/XMTU5MjYwNjMxMg==/v.swf" allowfullscreen="true"
+                   quality="high" allowscriptaccess="always" align="middle">
 
-  </div>
-</div>
+        </div>
+    </div>
 
 
 {% endblock %}
 
 
 {% block js %}
+
+    <script type="text/javascript" src="{% static "js/slide/sea.js" %}" id="seajsnode"></script>
+    <script type="text/javascript" src="{% static "js/slide/config.js" %}"></script>
+    <script>seajs.use('{% static "js/slide/jquery.indoor.js" %}');</script>
+    <script>seajs.use('{% static "js/slide/page.main.js" %}');</script>
+
     <script type="text/javascript" src="{% static "js/3deye.min.js" %}"></script>
     <script type="text/javascript">
         var revapi;
@@ -411,8 +461,8 @@ margin-top: 80px;
 
             revapi = $('#slide_detail1').revolution({
                 delay: 5000,
-                startwidth: 1920,
-                startheight: 1080,
+                startwidth: 2560,
+                startheight: 1200,
                 hideThumbs: 10,
                 lazyLoad: "on",
                 onHoverStop: "off",
@@ -422,8 +472,8 @@ margin-top: 80px;
 
             $('#slide_detail2').revolution({
                 delay: 9000,
-                startwidth: 1920,
-                startheight: 1080,
+                startwidth: 2560,
+                startheight: 1200,
                 hideThumbs: 10,
                 lazyLoad: "on",
                 onHoverStop: "off",
@@ -433,8 +483,8 @@ margin-top: 80px;
 
             revapi = $('#slide_detail3').revolution({
                 delay: 5000,
-                startwidth: 1920,
-                startheight: 1080,
+                startwidth: 2560,
+                startheight: 1200,
                 hideThumbs: 10,
                 lazyLoad: "on",
                 onHoverStop: "off",
@@ -444,8 +494,8 @@ margin-top: 80px;
 
             revapi = $('#slide_detail4').revolution({
                 delay: 5000,
-                startwidth: 1920,
-                startheight: 1080,
+                startwidth: 2560,
+                startheight: 1200,
                 hideThumbs: 10,
                 lazyLoad: "on",
                 onHoverStop: "off",
@@ -465,11 +515,11 @@ margin-top: 80px;
                 imageExtension: "png"
             });
 
-            $(".play").click(function(){
+            $(".play").click(function () {
                 $(".pop-bg").show();
                 $(".pop-wrap").show();
             });
-            $(".close").click(function(){
+            $(".close").click(function () {
                 $(".pop-bg").hide();
                 $(".pop-wrap").hide();
             });
